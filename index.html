@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/fundo-comida.jpg');
+            background-repeat: repeat;
+            background-size: initial;
+            background-position: top left;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(23 13 4);
+            color: white;
+        }
+
+        header img {
+            width: 80px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 36px;
+            vertical-align: middle;
+        }
+
+        table {
+            width: 70%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(23 13 4);
+            color: white;
+        }
+
+        td img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            width: 100px;
+        }
+
+        .headerCell {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 5px 0;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Música de fundo -->
+
+    <audio controls autoplay preload="auto">
+        <source src="audio /RingtoneBlue.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Cabeçalho com logo e nome da lanchonete -->
+    <header>
+        <img src="img/logo.jfif" alt="Logo da Lanchonete">
+        <h1>Lanchonete do Sabor</h1>
+    </header>
+
+    <!-- Tabela do Cardápio -->
+    <table>
+        <thead>
+            <tr>
+                <th class="headerCell" id="cardapio" colspan="3">Cardápio</th>
+                <th class="headerCell" id="preco" colspan="1">Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">
+                    <img src="img/hamburger-imagem-1.webp" alt="Hamburguer com Refri">
+                </td>
+                <th colspan="2">Hamburguer com Refri</th>
+                <td rowspan="3" style="text-align: center;">R$50</td>
+            </tr>
+            <tr>
+                <td>Hamburguer</td>
+                <td>R$40,00</td>
+            </tr>
+            <tr>
+                <td>Refri</td>
+                <td>R$10,00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <img src="img/hamburger-imagem-2.jfif" alt="Combo 2 Hamburguers">
+                </td>
+                <th colspan="2">Combo 2 Hamburguers</th>
+                <td rowspan="2" style="text-align: center;">R$40</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Carne Bovina</li>
+                        <li>Pão de Gergelim</li>
+                        <li>Queijo Cheddar</li>
+                        <li>Alface</li>
+                        <li>Tomate</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    <img src="img/hamburger-imagem-3.jfif" alt="Combo Hamburguer com Fritas">
+                </td>
+                <th colspan="2">Combo Hamburguer com Fritas</th>
+                <td rowspan="3" style="text-align: center;">R$35,00</td>
+            </tr>
+            <tr>
+                <td>Hamburguer</td>
+                <td>R$28,00</td>
+            </tr>
+            <tr>
+                <td>Refri</td>
+                <td>R$7,00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
